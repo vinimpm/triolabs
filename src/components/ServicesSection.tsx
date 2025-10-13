@@ -91,7 +91,7 @@ export default function ServicesSection() {
             >
               {/* Service Number - Background */}
               <motion.div
-                className={`absolute ${isEven ? 'left-0' : 'right-0'} top-1/2 transform -translate-y-1/2`}
+                className={`hidden md:block absolute ${isEven ? 'left-0' : 'right-0'} top-1/2 transform -translate-y-1/2`}
                 style={{ y: useTransform(scrollYProgress, [0, 1], [index * 20, index * -20]) }}
               >
                 <span className="text-[20rem] font-bold text-white/5 leading-none">
@@ -100,33 +100,33 @@ export default function ServicesSection() {
               </motion.div>
 
               {/* Service Content */}
-              <div className={`relative z-10 w-full max-w-4xl ${isEven ? 'ml-8 md:ml-32' : 'mr-8 md:mr-32'}`}>
+              <div className={`relative z-10 w-full max-w-4xl ${isEven ? 'ml-4 md:ml-32' : 'mr-4 md:mr-32'}`}>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                   className={`${
                     isEven ? 'clip-angular' : 'clip-fragment'
-                  } bg-zinc-800/95 backdrop-blur-sm p-10 md:p-16 border border-white/20`}
+                  } bg-zinc-800/95 backdrop-blur-sm p-8 md:p-16 border border-white/20`}
                 >
-                  <span className={`text-sm md:text-base ${service.color} uppercase tracking-[0.3em] font-semibold`}>
+                  <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
                   </span>
-                  <h3 className={`text-4xl md:text-6xl font-bold ${service.color} mt-4 mb-3`}>
+                  <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mt-3 mb-2 md:mt-4 md:mb-3`}>
                     {service.title}
                   </h3>
-                  <p className="text-xl md:text-2xl text-white/90 mb-6">
+                  <p className="text-lg md:text-2xl text-white/90 mb-4 md:mb-6">
                     {service.subtitle}
                   </p>
-                  <p className="text-base md:text-lg text-white/80 max-w-md mb-8 leading-relaxed">
+                  <p className="text-sm md:text-lg text-white/80 max-w-md mb-6 md:mb-8 leading-relaxed">
                     {service.description}
                   </p>
 
                   {/* Service Details */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 mt-6 md:mt-8">
                     {service.details.map((detail, idx) => (
-                      <div key={idx} className="flex items-center space-x-3">
+                      <div key={idx} className="flex items-center space-x-2 md:space-x-3">
                         <div className="w-1.5 h-1.5 bg-trio-red rounded-full flex-shrink-0" />
-                        <span className="text-base text-white/70 font-medium">{detail}</span>
+                        <span className="text-sm md:text-base text-white/70 font-medium">{detail}</span>
                       </div>
                     ))}
                   </div>
