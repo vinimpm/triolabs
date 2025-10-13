@@ -27,14 +27,14 @@ export default function AboutSection() {
       </div>
 
       {/* Title Section - Large Typography */}
-      <div className="relative pt-32">
+      <div className="relative pt-32 px-8 md:px-16">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1 }}
           className="overflow-hidden"
         >
-          <h2 className="display-title text-white pl-8 md:pl-16">
+          <h2 className="display-title text-white">
             6 ANOS
             <span className="text-outline block">DE OUSADIA</span>
           </h2>
