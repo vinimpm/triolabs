@@ -49,11 +49,11 @@ export default function ManifestoSection() {
 
         {/* Floating Text Block - Right */}
         <motion.div
-          className="col-span-5 col-start-8 pt-32 px-4 md:px-0"
+          className="col-span-5 col-start-8 pt-32 px-6 md:px-0"
           style={{ y: y2 }}
         >
-          <div className="md:clip-fragment bg-trio-red p-8 md:p-12">
-            <p className="text-white text-lg md:text-2xl font-bold uppercase leading-relaxed">
+          <div className="md:clip-fragment bg-trio-red p-12 md:p-12">
+            <p className="text-white text-base md:text-2xl font-bold uppercase leading-relaxed">
               Provocar suor.<br/>
               Pulsar desejo.<br/>
               Causar desconforto.
