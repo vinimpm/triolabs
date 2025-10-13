@@ -70,7 +70,7 @@ export default function ManifestoSection() {
             <div className="absolute inset-0 bg-[url('/brand/TRIO_LABS_ICONE_PRETO.png')] bg-center bg-no-repeat bg-contain opacity-5" />
 
             {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center px-4">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -82,7 +82,7 @@ export default function ManifestoSection() {
                   <span className="text-outline-filled">TRÍADE</span><br/>
                   DA RUPTURA
                 </h3>
-                <div className="flex justify-center space-x-8 text-white/60 text-lg">
+                <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-white/60 text-sm md:text-lg px-4">
                   <span>Neurobranding</span>
                   <span className="text-trio-red">•</span>
                   <span>Posicionamento</span>
