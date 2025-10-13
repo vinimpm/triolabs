@@ -51,10 +51,10 @@ export default function ContactSection() {
           transition={{ duration: 1 }}
           className="relative"
         >
-          <h2 className="display-title text-white/10 absolute left-1/2 transform -translate-x-1/2 text-center">
+          <h2 className="display-title text-white/5 absolute left-1/2 top-0 transform -translate-x-1/2 text-center pointer-events-none">
             CONTACT
           </h2>
-          <h2 className="section-title text-white relative text-center z-10">
+          <h2 className="section-title text-white relative text-center z-10 pt-8">
             VAMOS<br/>
             <span className="text-trio-red">CRIAR</span><br/>
             <span className="text-outline">JUNTOS?</span>
