@@ -22,10 +22,10 @@ export default function Footer() {
 
         {/* Main Content - Asymmetric Grid */}
         <div className="relative z-10 px-8 md:px-16 py-20">
-          <div className="asymmetric-grid">
+          <div className="grid grid-cols-1 md:asymmetric-grid gap-12 md:gap-0">
             {/* Brand Section - Large Typography */}
             <motion.div
-              className="col-span-6 col-start-1"
+              className="md:col-span-6 md:col-start-1"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -51,7 +51,7 @@ export default function Footer() {
 
             {/* Quick Links - Minimal Style */}
             <motion.div
-              className="col-span-3 col-start-8"
+              className="md:col-span-3 md:col-start-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -89,7 +89,7 @@ export default function Footer() {
 
             {/* Contact Info */}
             <motion.div
-              className="col-span-3 col-start-11"
+              className="md:col-span-3 md:col-start-11"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -165,7 +165,7 @@ export default function Footer() {
 
         {/* Large Background Text */}
         <motion.div
-          className="absolute bottom-0 right-0 text-[20rem] font-bold text-white/5 leading-none pointer-events-none select-none"
+          className="hidden md:block absolute bottom-0 right-0 text-[20rem] font-bold text-white/5 leading-none pointer-events-none select-none"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.5 }}
           viewport={{ once: true }}

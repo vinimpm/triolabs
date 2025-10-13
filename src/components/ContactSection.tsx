@@ -64,10 +64,10 @@ export default function ContactSection() {
 
       {/* Asymmetric Layout */}
       <div className="relative">
-        <div className="asymmetric-grid">
+        <div className="grid grid-cols-1 md:asymmetric-grid gap-16 md:gap-0">
           {/* Form Section - Left Side */}
           <motion.div
-            className="col-span-7 col-start-1"
+            className="md:col-span-7 md:col-start-1"
             initial={{ x: -100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 1 }}
@@ -168,11 +168,10 @@ export default function ContactSection() {
 
           {/* Contact Info - Right Side */}
           <motion.div
-            className="col-span-5 col-start-8"
+            className="md:col-span-5 md:col-start-8"
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
-            style={{ y: y1 }}
           >
             <div className="clip-fragment bg-trio-red/10 backdrop-blur-sm p-12 md:p-16">
               <div className="space-y-12">
@@ -240,18 +239,18 @@ export default function ContactSection() {
 
       {/* CTA Section - Bottom */}
       <motion.div
-        className="relative mt-32 mb-16"
+        className="relative mt-32 mb-16 px-8"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
         <div className="text-center">
-          <h3 className="text-5xl md:text-7xl font-bold text-white mb-8">
+          <h3 className="text-4xl md:text-7xl font-bold text-white mb-8">
             PRONTO PARA<br/>
             <span className="text-trio-red">TRANSFORMAR</span><br/>
             SUA MARCA?
           </h3>
-          <p className="text-white/60 text-xl max-w-2xl mx-auto">
+          <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto">
             Entre em contato e inicie sua jornada de transformação
             através do Método Toriê.
           </p>
@@ -260,7 +259,7 @@ export default function ContactSection() {
 
       {/* Background Large Text */}
       <motion.div
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-[30rem] text-white/5 font-bold leading-none pointer-events-none"
+        className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 text-[30rem] text-white/5 font-bold leading-none pointer-events-none"
         style={{ y: useTransform(scrollYProgress, [0, 1], [200, 0]) }}
       >
         TRIO
