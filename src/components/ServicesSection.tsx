@@ -100,13 +100,13 @@ export default function ServicesSection() {
               </motion.div>
 
               {/* Service Content */}
-              <div className={`relative z-10 w-full max-w-4xl ${isEven ? 'ml-4 md:ml-32' : 'mr-4 md:mr-32'}`}>
+              <div className={`relative z-10 w-full max-w-4xl px-4 md:px-0 ${isEven ? 'md:ml-32' : 'md:mr-32'}`}>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                   className={`${
-                    isEven ? 'clip-angular' : 'clip-fragment'
-                  } bg-zinc-800/95 backdrop-blur-sm p-8 md:p-16 border border-white/20`}
+                    isEven ? 'md:clip-angular' : 'md:clip-fragment'
+                  } bg-zinc-800/95 backdrop-blur-sm p-10 md:p-16 border border-white/20`}
                 >
                   <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
