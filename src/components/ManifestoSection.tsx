@@ -52,11 +52,11 @@ export default function ManifestoSection() {
           className="col-span-5 col-start-8 pt-32 px-6 md:px-0"
           style={{ y: y2 }}
         >
-          <div className="md:clip-fragment bg-trio-red p-12 md:p-12">
-            <div className="text-white text-base md:text-2xl font-bold uppercase leading-relaxed space-y-2">
-              <p className="whitespace-nowrap">Provocar suor.</p>
-              <p className="whitespace-nowrap">Pulsar desejo.</p>
-              <p className="whitespace-nowrap">Causar desconforto.</p>
+          <div className="md:clip-fragment bg-trio-red p-10 md:p-12">
+            <div className="text-white text-sm md:text-2xl font-bold uppercase leading-relaxed space-y-2">
+              <p>Provocar suor.</p>
+              <p>Pulsar desejo.</p>
+              <p>Causar desconforto.</p>
             </div>
           </div>
         </motion.div>
