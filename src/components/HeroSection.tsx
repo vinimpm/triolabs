@@ -15,21 +15,13 @@ export default function HeroSection() {
 
   return (
     <section ref={containerRef} className="relative min-h-[120vh] overflow-hidden">
-      {/* Video/Image Background */}
+      {/* Background */}
       <motion.div
         className="absolute inset-0"
         style={{ scale }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900/80 to-black" />
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute w-full h-full object-cover opacity-20"
-        >
-          <source src="/video/hero-bg.mp4" type="video/mp4" />
-        </video>
+        <div className="absolute inset-0 bg-[url('/brand/TRIO_LABS_ICONE_PRETO.png')] bg-center bg-no-repeat bg-cover opacity-5" />
       </motion.div>
 
       {/* Noise Overlay */}
