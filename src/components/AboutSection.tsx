@@ -93,23 +93,22 @@ export default function AboutSection() {
       </div>
 
       {/* CEO Section - Documentary Style */}
-      <div className="relative mt-64">
-        <div className="asymmetric-grid">
+      <div className="relative mt-32 md:mt-64 px-8 md:px-0">
+        <div className="grid grid-cols-1 md:asymmetric-grid gap-12 md:gap-0">
           {/* Image Area */}
           <motion.div
-            className="col-span-5 col-start-1"
+            className="md:col-span-5 md:col-start-1"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1 }}
-            style={{ y: y2 }}
           >
-            <div className="relative h-[70vh] clip-angular bg-gradient-to-br from-trio-red/20 to-transparent">
+            <div className="relative h-[50vh] md:h-[70vh] clip-angular bg-gradient-to-br from-trio-red/20 to-transparent">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-[15rem] text-white/5 font-bold leading-none">
+                <div className="text-center px-4">
+                  <div className="text-[8rem] md:text-[15rem] text-white/5 font-bold leading-none">
                     LA
                   </div>
-                  <p className="text-trio-red text-2xl font-light -mt-16">LUANA ANTTONI</p>
+                  <p className="text-trio-red text-xl md:text-2xl font-light -mt-8 md:-mt-16">LUANA ANTTONI</p>
                 </div>
               </div>
               {/* Decorative Border */}
@@ -123,21 +122,21 @@ export default function AboutSection() {
 
           {/* Content Area */}
           <motion.div
-            className="col-span-7 col-start-6"
+            className="md:col-span-7 md:col-start-6"
             initial={{ opacity: 0, x: 100 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <div className="pl-8 pr-8 md:pr-16 pt-16">
-              <span className="text-trio-red text-sm uppercase tracking-[0.5em]">
+            <div className="md:pl-8 md:pr-16 md:pt-16">
+              <span className="text-trio-red text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em]">
                 CEO & Fundadora
               </span>
-              <h3 className="text-6xl md:text-8xl font-bold text-white mt-4 mb-8">
+              <h3 className="text-4xl md:text-8xl font-bold text-white mt-4 mb-6 md:mb-8">
                 LUANA<br/>
                 <span className="text-outline-filled">ANTTONI</span>
               </h3>
 
-              <div className="space-y-6 text-white/70 text-lg">
+              <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg">
                 <p>
                   Estrategista apaixonada por negócios e comportamento humano.
                 </p>
@@ -154,12 +153,12 @@ export default function AboutSection() {
 
               {/* Quote */}
               <motion.div
-                className="mt-16 pl-8 border-l-4 border-trio-red"
+                className="mt-8 md:mt-16 pl-6 md:pl-8 border-l-4 border-trio-red"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1, delay: 0.4 }}
               >
-                <p className="text-2xl text-white/80 italic">
+                <p className="text-lg md:text-2xl text-white/80 italic">
                   "Aqui, cada marca é tratada como uma obra em construção:
                   intencional, estratégica e memorável."
                 </p>
