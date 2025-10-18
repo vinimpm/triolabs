@@ -125,22 +125,6 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 right-8 z-30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/40 text-sm uppercase tracking-wider rotate-90 origin-center"
-          >
-            Scroll
-          </motion.div>
-        </motion.div>
-
         {/* Japanese Characters Decoration */}
         <motion.div
           className="absolute top-20 right-20 text-8xl text-white/5 font-bold hidden lg:block"
