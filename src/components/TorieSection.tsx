@@ -45,9 +45,9 @@ export default function TorieSection() {
       {/* Manifesto Section - Asymmetric Layout */}
       <div className="relative py-12 md:py-24">
         <div className="asymmetric-grid max-w-7xl mx-auto px-8 md:px-16">
-          {/* Left - Main Title */}
+          {/* Main Title - Full Width */}
           <motion.div
-            className="col-span-12 md:col-span-7 mb-16 md:mb-0"
+            className="col-span-12 mb-16 md:mb-20"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1 }}
@@ -68,39 +68,39 @@ export default function TorieSection() {
             </div>
           </motion.div>
 
-          {/* Right - Impact Card */}
+          {/* Left - First Text Block in Card */}
           <motion.div
-            className="col-span-12 md:col-span-5 md:col-start-8"
-            initial={{ opacity: 0, x: 50 }}
+            className="col-span-12 md:col-span-7"
+            initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <div className="md:clip-fragment bg-trio-red p-8 md:p-12">
+            <div className="md:clip-angular bg-zinc-800/50 p-8 md:p-12 border-l-4 border-trio-red">
+              <p className="text-base md:text-lg text-white/85 leading-relaxed mb-6">
+                O Método Toriê nasce da inquietude — da recusa em aceitar padrões, fórmulas prontas e discursos que esvaziam significado.
+                Ele é uma experiência viva, um mergulho profundo naquilo que é autêntico, potente e verdadeiro em cada marca — pessoal ou corporativa.
+              </p>
+              <p className="text-base md:text-lg text-white leading-relaxed">
+                Aqui, não buscamos aperfeiçoar o que o mercado espera de você.
+                <span className="text-trio-red font-semibold"> Buscamos reacender o que o mundo tentou apagar.</span>
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Right - Impact Card */}
+          <motion.div
+            className="col-span-12 md:col-span-5 md:col-start-8 mt-8 md:mt-0"
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1, delay: 0.4 }}
+          >
+            <div className="md:clip-fragment bg-trio-red p-8 md:p-12 flex items-center min-h-full">
               <div className="text-white text-lg md:text-2xl font-bold uppercase space-y-3">
                 <p>A Trio não ensina.</p>
                 <p>Provoca.</p>
                 <p>Desconstrói.</p>
                 <p>Reconstrói.</p>
               </div>
-            </div>
-          </motion.div>
-
-          {/* Full Width - First Text Block */}
-          <motion.div
-            className="col-span-12 mt-16 md:mt-24"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1, delay: 0.4 }}
-          >
-            <div className="max-w-4xl">
-              <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-8">
-                O Método Toriê nasce da inquietude — da recusa em aceitar padrões, fórmulas prontas e discursos que esvaziam significado.
-                Ele é uma experiência viva, um mergulho profundo naquilo que é autêntico, potente e verdadeiro em cada marca — pessoal ou corporativa.
-              </p>
-              <p className="text-lg md:text-xl text-white leading-relaxed">
-                Aqui, não buscamos aperfeiçoar o que o mercado espera de você.
-                <span className="text-trio-red font-semibold"> Buscamos reacender o que o mundo tentou apagar.</span>
-              </p>
             </div>
           </motion.div>
 
