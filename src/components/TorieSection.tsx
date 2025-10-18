@@ -98,87 +98,89 @@ export default function TorieSection() {
         </div>
       </div>
 
-      {/* Process Steps - Documentary Style - Fixed Overlapping */}
-      <div className="relative mt-32 space-y-16 md:space-y-8 px-8 md:px-0">
-        {/* Step 01 - Imersão */}
-        <motion.div
-          className="w-full md:w-2/3 md:ml-0"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1 }}
-        >
-          <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:p-24 overflow-hidden">
-            <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-12 left-12 md:top-16 md:left-16">01</span>
-            <div className="relative z-10 pt-12">
-              <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">IMERSÃO</h3>
-              <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">没入</p>
-              <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
-                Mergulhamos na essência da sua marca, entendendo profundamente
-                sua história, valores e aspirações.
-              </p>
+      {/* Process Steps - Documentary Style - Centered with Zigzag */}
+      <div className="relative mt-32 max-w-6xl mx-auto px-8">
+        <div className="space-y-16 md:space-y-8">
+          {/* Step 01 - Imersão */}
+          <motion.div
+            className="w-full md:w-4/5 md:ml-0 md:mr-auto"
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1 }}
+          >
+            <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:p-24 overflow-hidden">
+              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-10 md:left-16">01</span>
+              <div className="relative z-10 pt-16">
+                <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">IMERSÃO</h3>
+                <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">没入</p>
+                <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
+                  Mergulhamos na essência da sua marca, entendendo profundamente
+                  sua história, valores e aspirações.
+                </p>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* Step 02 - Descoberta */}
-        <motion.div
-          className="w-full md:w-2/3 md:ml-auto"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 0.2 }}
-        >
-          <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
-            <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-12 right-12 md:top-16 md:right-16">02</span>
-            <div className="relative z-10 md:text-right pt-12">
-              <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">DESCOBERTA</h3>
-              <p className="text-white text-xl md:text-2xl mb-6 font-semibold">発見</p>
-              <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
-                Revelamos insights ocultos através de análise estratégica,
-                pesquisa de mercado e neuromarketing.
-              </p>
+          {/* Step 02 - Descoberta */}
+          <motion.div
+            className="w-full md:w-4/5 md:ml-auto md:mr-0"
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
+              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-8 right-12 md:top-10 md:right-16">02</span>
+              <div className="relative z-10 md:text-right pt-16">
+                <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">DESCOBERTA</h3>
+                <p className="text-white text-xl md:text-2xl mb-6 font-semibold">発見</p>
+                <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
+                  Revelamos insights ocultos através de análise estratégica,
+                  pesquisa de mercado e neuromarketing.
+                </p>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* Step 03 - Criação */}
-        <motion.div
-          className="w-full md:w-2/3 md:ml-0"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 0.4 }}
-        >
-          <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:p-24 overflow-hidden">
-            <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-12 left-12 md:top-16 md:left-16">03</span>
-            <div className="relative z-10 pt-12">
-              <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">CRIAÇÃO</h3>
-              <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">創造</p>
-              <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
-                Transformamos estratégia em arte, desenvolvendo uma
-                identidade única e memorável.
-              </p>
+          {/* Step 03 - Criação */}
+          <motion.div
+            className="w-full md:w-4/5 md:ml-0 md:mr-auto"
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1, delay: 0.4 }}
+          >
+            <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:p-24 overflow-hidden">
+              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-10 md:left-16">03</span>
+              <div className="relative z-10 pt-16">
+                <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">CRIAÇÃO</h3>
+                <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">創造</p>
+                <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
+                  Transformamos estratégia em arte, desenvolvendo uma
+                  identidade única e memorável.
+                </p>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* Step 04 - Evolução */}
-        <motion.div
-          className="w-full md:w-2/3 md:ml-auto mb-32"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 0.6 }}
-        >
-          <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
-            <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-12 right-12 md:top-16 md:right-16">04</span>
-            <div className="relative z-10 md:text-right pt-12">
-              <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">EVOLUÇÃO</h3>
-              <p className="text-white text-xl md:text-2xl mb-6 font-semibold">進化</p>
-              <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
-                Acompanhamos e otimizamos continuamente, garantindo
-                crescimento sustentável e relevância.
-              </p>
+          {/* Step 04 - Evolução */}
+          <motion.div
+            className="w-full md:w-4/5 md:ml-auto md:mr-0 mb-32"
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1, delay: 0.6 }}
+          >
+            <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
+              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-8 right-12 md:top-10 md:right-16">04</span>
+              <div className="relative z-10 md:text-right pt-16">
+                <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">EVOLUÇÃO</h3>
+                <p className="text-white text-xl md:text-2xl mb-6 font-semibold">進化</p>
+                <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
+                  Acompanhamos e otimizamos continuamente, garantindo
+                  crescimento sustentável e relevância.
+                </p>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
 
       {/* CTA Section */}
