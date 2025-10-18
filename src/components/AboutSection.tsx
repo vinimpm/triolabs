@@ -171,7 +171,7 @@ export default function AboutSection() {
 
       {/* Philosophy Statement - Large Typography */}
       <motion.div
-        className="relative min-h-screen flex items-center justify-center mt-32"
+        className="relative min-h-screen flex items-center justify-center mt-16 md:mt-32"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ duration: 1 }}

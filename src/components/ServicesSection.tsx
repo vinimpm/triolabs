@@ -162,7 +162,7 @@ export default function ServicesSection() {
 
       {/* Special Service - Método Toriê */}
       <motion.div
-        className="relative min-h-screen flex items-center justify-center"
+        className="relative min-h-[60vh] md:min-h-screen flex items-center justify-center mt-16 md:mt-0"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ duration: 1, delay: 0.5 }}
