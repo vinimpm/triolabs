@@ -82,7 +82,7 @@ export default function ServicesSection() {
           return (
             <motion.div
               key={index}
-              className={`relative min-h-[60vh] flex items-center ${
+              className={`relative min-h-[80vh] md:min-h-[70vh] mb-20 md:mb-32 flex items-center ${
                 isEven ? 'justify-start' : 'justify-end'
               }`}
               initial={{ opacity: 0, x: isEven ? -100 : 100 }}
@@ -106,7 +106,7 @@ export default function ServicesSection() {
                   transition={{ duration: 0.3 }}
                   className={`${
                     isEven ? 'md:clip-angular' : 'md:clip-fragment'
-                  } bg-zinc-800/95 backdrop-blur-sm p-12 md:p-20 border border-white/20`}
+                  } bg-zinc-800/95 backdrop-blur-sm p-14 md:p-24 border border-white/20`}
                 >
                   <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
@@ -114,16 +114,15 @@ export default function ServicesSection() {
                   <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mt-3 mb-2 md:mt-4 md:mb-3`}>
                     {service.title}
                   </h3>
-                  <p className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
-                    <span className="text-outline-filled">{service.subtitle.split(' ')[0]}</span>
-                    <span className="text-white"> {service.subtitle.split(' ').slice(1).join(' ')}</span>
+                  <p className="text-xl md:text-2xl font-bold mb-6 md:mb-8">
+                    <span className="text-outline text-white">{service.subtitle}</span>
                   </p>
-                  <p className="text-sm md:text-lg text-white/85 max-w-md mb-8 md:mb-10 leading-relaxed">
+                  <p className="text-sm md:text-lg text-white/85 max-w-md mb-10 md:mb-12 leading-relaxed">
                     {service.description}
                   </p>
 
                   {/* Service Details */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mt-6 md:mt-8 mb-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-8">
                     {service.details.map((detail, idx) => (
                       <div key={idx} className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
