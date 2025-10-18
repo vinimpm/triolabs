@@ -167,7 +167,7 @@ export default function TorieSection() {
 
           {/* Step 02 - Descoberta */}
           <motion.div
-            className="md:mt-8 lg:mt-12"
+            className="md:translate-y-8 lg:translate-y-12"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -206,7 +206,7 @@ export default function TorieSection() {
 
           {/* Step 04 - Evolução */}
           <motion.div
-            className="md:mt-8 lg:mt-12"
+            className="md:translate-y-8 lg:translate-y-12"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
