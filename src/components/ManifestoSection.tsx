@@ -19,9 +19,9 @@ export default function ManifestoSection() {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8])
 
   return (
-    <section ref={containerRef} id="manifesto" className="relative min-h-[150vh] overflow-hidden bg-gradient-to-b from-black via-zinc-900 to-black">
+    <section ref={containerRef} id="manifesto" className="relative min-h-[150vh] overflow-hidden bg-white">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-br from-trio-red/20 via-transparent to-trio-red/10" />
       </div>
 
@@ -38,9 +38,9 @@ export default function ManifestoSection() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 1 }}
           >
-            <h2 className="display-title text-white leading-[0.8] pl-8 md:pl-16">
+            <h2 className="display-title text-black leading-[0.8] pl-8 md:pl-16">
               NÃO<br/>
-              <span className="text-outline">NASCEMOS</span><br/>
+              <span className="text-outline-black">NASCEMOS</span><br/>
               <span className="text-trio-red">PARA</span><br/>
               AGRADAR
             </h2>
@@ -77,12 +77,12 @@ export default function ManifestoSection() {
                 transition={{ duration: 1.2 }}
                 className="text-center"
               >
-                <h3 className="section-title text-white mb-8">
+                <h3 className="section-title text-black mb-8">
                   SOMOS A<br/>
-                  <span className="text-outline-filled">TRÍADE</span><br/>
+                  <span className="text-outline-filled-black">TRÍADE</span><br/>
                   DA RUPTURA
                 </h3>
-                <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-white/60 text-sm md:text-lg px-4">
+                <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-black/60 text-sm md:text-lg px-4">
                   <span>Neurobranding</span>
                   <span className="text-trio-red">•</span>
                   <span>Posicionamento</span>
@@ -103,27 +103,27 @@ export default function ManifestoSection() {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8">
-              <div className="bg-zinc-900/50 p-8 border-l-4 border-trio-red">
+              <div className="bg-zinc-100 p-8 border-l-4 border-trio-red">
                 <h4 className="text-2xl md:text-3xl text-trio-red font-bold mb-4">
                   Ousar não é risco.
                 </h4>
-                <p className="text-white/80 text-lg md:text-xl">
+                <p className="text-black/80 text-lg md:text-xl">
                   É estratégia.
                 </p>
               </div>
-              <div className="bg-zinc-900/50 p-8 border-l-4 border-white">
-                <h4 className="text-2xl md:text-3xl text-white font-bold mb-4">
+              <div className="bg-zinc-100 p-8 border-l-4 border-black">
+                <h4 className="text-2xl md:text-3xl text-black font-bold mb-4">
                   Ser profundo não é confuso.
                 </h4>
-                <p className="text-white/80 text-lg md:text-xl">
+                <p className="text-black/80 text-lg md:text-xl">
                   É autoridade.
                 </p>
               </div>
-              <div className="bg-zinc-900/50 p-8 border-l-4 border-trio-red">
+              <div className="bg-zinc-100 p-8 border-l-4 border-trio-red">
                 <h4 className="text-2xl md:text-3xl text-trio-red font-bold mb-4">
                   Ser você não é aleatório.
                 </h4>
-                <p className="text-white/80 text-lg md:text-xl">
+                <p className="text-black/80 text-lg md:text-xl">
                   É poder.
                 </p>
               </div>
@@ -138,37 +138,22 @@ export default function ManifestoSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-black/80 via-zinc-900/60 to-black/80 backdrop-blur-md p-8 md:p-12 border border-trio-red/30 shadow-2xl shadow-trio-red/10">
-            <h3 className="text-3xl md:text-4xl text-white font-bold mb-6 uppercase tracking-wide" style={{
-              textShadow: '3px 3px 12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.2)'
-            }}>
+          <div className="max-w-4xl mx-auto bg-zinc-900 p-8 md:p-12 border border-trio-red/30 shadow-2xl shadow-trio-red/10">
+            <h3 className="text-3xl md:text-4xl text-white font-bold mb-6 uppercase tracking-wide">
               A Triô é pra quem tem coragem
             </h3>
             <div className="space-y-4 text-lg">
-              <p className="text-white/90" style={{
-                textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)'
-              }}>
-                Pra quem quer <span className="text-trio-red font-semibold tracking-wide" style={{
-                  textShadow: '0 0 25px rgba(255, 0, 0, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8)'
-                }}>virar o jogo da própria marca</span>.
+              <p className="text-white/90">
+                Pra quem quer <span className="text-trio-red font-semibold tracking-wide">virar o jogo da própria marca</span>.
               </p>
-              <p className="text-white/90" style={{
-                textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)'
-              }}>
-                Pra quem quer <span className="text-white font-semibold tracking-wide" style={{
-                  textShadow: '2px 2px 8px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8)'
-                }}>parar de parecer e começar a ser</span>.
+              <p className="text-white/90">
+                Pra quem quer <span className="text-white font-semibold tracking-wide">parar de parecer e começar a ser</span>.
               </p>
-              <p className="text-white/90" style={{
-                textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)'
-              }}>
-                Pra quem prefere <span className="text-trio-red font-semibold tracking-wide" style={{
-                  textShadow: '0 0 25px rgba(255, 0, 0, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8)'
-                }}>ser lembrado a ser aceito</span>.
+              <p className="text-white/90">
+                Pra quem prefere <span className="text-trio-red font-semibold tracking-wide">ser lembrado a ser aceito</span>.
               </p>
               <div className="mt-6 pt-6 border-t border-trio-red/20">
                 <p className="text-white/70 text-base italic" style={{
-                  textShadow: '1px 1px 4px rgba(0, 0, 0, 0.8)',
                   letterSpacing: '0.02em'
                 }}>
                   Posicionar é um ato de coragem — e também de prazer.
@@ -186,11 +171,11 @@ export default function ManifestoSection() {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <div className="text-center">
-            <h3 className="display-title text-white/10 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h3 className="display-title text-black/10 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               TRIÔ
             </h3>
             <div className="relative z-10">
-              <p className="text-4xl text-white mb-4">
+              <p className="text-4xl text-black mb-4">
                 Não somos para todos.
               </p>
               <p className="text-6xl text-trio-red font-bold">
@@ -202,7 +187,7 @@ export default function ManifestoSection() {
 
         {/* Japanese Elements - Positioned to not overlap */}
         <motion.div
-          className="absolute top-32 right-16 text-9xl text-white/5 hidden lg:block pointer-events-none"
+          className="absolute top-32 right-16 text-9xl text-black/5 hidden lg:block pointer-events-none"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 1, delay: 1 }}
@@ -210,7 +195,7 @@ export default function ManifestoSection() {
           魂
         </motion.div>
         <motion.div
-          className="absolute bottom-64 left-16 text-9xl text-white/5 hidden lg:block pointer-events-none"
+          className="absolute bottom-64 left-16 text-9xl text-black/5 hidden lg:block pointer-events-none"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 1, delay: 1.2 }}

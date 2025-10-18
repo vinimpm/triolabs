@@ -90,6 +90,15 @@
     -webkit-text-stroke: 1px rgba(255,255,255,0.8);
   }
 
+  .text-outline-black {
+    -webkit-text-stroke: 2px rgba(0,0,0,0.2);
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-outline-filled-black {
+    -webkit-text-stroke: 1px rgba(0,0,0,0.8);
+  }
+
   /* Blend Modes */
   .blend-overlay {
     mix-blend-mode: overlay;
