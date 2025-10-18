@@ -127,7 +127,7 @@ export default function TorieSection() {
 
           {/* Closing Statement */}
           <motion.div
-            className="col-span-12 mt-16 md:mt-24 mb-8 text-center"
+            className="col-span-12 mt-12 md:mt-24 mb-12 md:mb-16 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.8 }}
