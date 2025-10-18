@@ -83,11 +83,11 @@ export default function ManifestoSection() {
                   DA RUPTURA
                 </h3>
                 <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-lg px-4">
-                  <span className="bg-trio-red text-white px-3 py-1 font-semibold">Neurobranding</span>
+                  <span className="text-white font-semibold">Neurobranding</span>
                   <span className="text-trio-red">•</span>
-                  <span className="bg-trio-red text-white px-3 py-1 font-semibold">Posicionamento</span>
+                  <span className="text-white font-semibold">Posicionamento</span>
                   <span className="text-trio-red">•</span>
-                  <span className="bg-trio-red text-white px-3 py-1 font-semibold">Presença</span>
+                  <span className="text-white font-semibold">Presença</span>
                 </div>
               </motion.div>
             </div>
