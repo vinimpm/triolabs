@@ -167,12 +167,11 @@ export default function TorieSection() {
 
           {/* Step 02 - Descoberta */}
           <motion.div
-            className="md:translate-y-16 lg:translate-y-20"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden">
+            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden md:translate-y-16 lg:translate-y-20">
               <span className="text-4xl text-trio-red/10 font-bold absolute top-4 right-4">02</span>
               <div className="relative z-10">
                 <h3 className="text-2xl text-trio-red font-bold mb-2">DESCOBERTA</h3>
@@ -206,12 +205,11 @@ export default function TorieSection() {
 
           {/* Step 04 - Evolução */}
           <motion.div
-            className="md:translate-y-16 lg:translate-y-20"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden">
+            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden md:translate-y-16 lg:translate-y-20">
               <span className="text-4xl text-trio-red/10 font-bold absolute top-4 right-4">04</span>
               <div className="relative z-10">
                 <h3 className="text-2xl text-trio-red font-bold mb-2">EVOLUÇÃO</h3>
