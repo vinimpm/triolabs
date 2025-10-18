@@ -226,7 +226,7 @@ export default function TorieSection() {
 
       {/* CTA Section */}
       <motion.div
-        className="relative min-h-[50vh] flex items-center justify-center mt-16 md:mt-32"
+        className="relative min-h-[50vh] flex items-center justify-center mt-8 md:mt-12"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={isInView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 1 }}
