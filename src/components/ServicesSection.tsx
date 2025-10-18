@@ -82,7 +82,7 @@ export default function ServicesSection() {
           return (
             <motion.div
               key={index}
-              className={`relative min-h-[60vh] md:min-h-[40vh] mb-8 md:mb-0 flex items-center ${
+              className={`relative min-h-[60vh] md:min-h-[50vh] mb-8 md:mb-0 flex items-center ${
                 isEven ? 'justify-start' : 'justify-end'
               }`}
               initial={{ opacity: 0, x: isEven ? -100 : 100 }}
