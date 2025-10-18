@@ -29,7 +29,7 @@ export default function ManifestoSection() {
       <div className="relative asymmetric-grid">
         {/* Large Statement 1 - Top Left */}
         <motion.div
-          className="col-span-8 col-start-1 pt-32 relative z-20"
+          className="col-span-8 col-start-1 pt-16 md:pt-32 relative z-20"
           style={{ y: y1 }}
         >
           <motion.div
