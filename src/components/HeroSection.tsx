@@ -14,7 +14,7 @@ export default function HeroSection() {
   const scale = useTransform(scrollY, [0, 300], [1, 1.2])
 
   return (
-    <section ref={containerRef} className="relative min-h-[120vh] overflow-hidden">
+    <section ref={containerRef} className="relative min-h-[100vh] md:min-h-[100vh] lg:min-h-[120vh] overflow-hidden">
       {/* Background */}
       <motion.div
         className="absolute inset-0"
