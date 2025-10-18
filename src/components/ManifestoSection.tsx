@@ -63,7 +63,7 @@ export default function ManifestoSection() {
 
         {/* Central Image/Video Area */}
         <motion.div
-          className="col-span-12 relative h-[60vh] md:h-[70vh] mt-16 md:mt-32"
+          className="col-span-12 relative h-[60vh] md:h-[70vh] mt-8 md:mt-32"
           style={{ scale }}
         >
           <div className="absolute inset-0 clip-angular bg-gradient-to-b from-transparent to-black">
@@ -95,7 +95,7 @@ export default function ManifestoSection() {
         </motion.div>
 
         {/* Philosophy Statements - Expanded */}
-        <div className="col-span-12 mt-32">
+        <div className="col-span-12 mt-16 md:mt-32">
           <motion.div
             className="max-w-7xl mx-auto px-8 md:px-16"
             initial={{ opacity: 0 }}
@@ -133,7 +133,7 @@ export default function ManifestoSection() {
 
         {/* Additional Manifesto Content */}
         <motion.div
-          className="col-span-12 mt-24 px-8 md:px-16"
+          className="col-span-12 mt-12 md:mt-24 px-8 md:px-16"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.4 }}
@@ -155,7 +155,7 @@ export default function ManifestoSection() {
 
         {/* Bottom Section */}
         <motion.div
-          className="col-span-12 mt-32 mb-32 relative"
+          className="col-span-12 mt-16 mb-16 md:mt-32 md:mb-32 relative"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.6 }}
