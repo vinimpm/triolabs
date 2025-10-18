@@ -114,7 +114,7 @@ export default function ServicesSection() {
                   <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mt-3 mb-2 md:mt-4 md:mb-3`}>
                     {service.title}
                   </h3>
-                  <p className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 tracking-wider">
+                  <p className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 tracking-wider">
                     <span className="text-white" style={{
                       WebkitTextStroke: service.color === 'text-white' ? '2px #FF0000' : '2px #FFFFFF',
                       WebkitTextFillColor: 'transparent',
@@ -125,20 +125,24 @@ export default function ServicesSection() {
                     }}>{service.subtitle}</span>
                   </p>
 
-                  <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+                  <div className="grid md:grid-cols-2 gap-8 md:gap-16">
                     {/* Description */}
-                    <p className="text-sm md:text-lg text-white/85 max-w-md leading-relaxed flex-1">
-                      {service.description}
-                    </p>
+                    <div>
+                      <p className="text-sm md:text-lg text-white/85 leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
 
                     {/* Service Details - Vertical */}
-                    <div className="flex flex-col gap-4 md:gap-5 md:border-l md:border-white/20 md:pl-12">
-                      {service.details.map((detail, idx) => (
-                        <div key={idx} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
-                          <span className="text-base md:text-lg text-white/90 font-medium whitespace-nowrap">{detail}</span>
-                        </div>
-                      ))}
+                    <div>
+                      <div className="flex flex-col gap-4 md:gap-5">
+                        {service.details.map((detail, idx) => (
+                          <div key={idx} className="flex items-center space-x-3">
+                            <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
+                            <span className="text-base md:text-lg text-white/90 font-medium">{detail}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
