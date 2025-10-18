@@ -141,7 +141,7 @@ export default function TorieSection() {
 
       {/* Process Steps - Documentary Style - Centered with Zigzag */}
       <div className="relative mt-12 md:mt-16 max-w-7xl mx-auto px-8">
-        <div className="space-y-16 md:space-y-8">
+        <div className="space-y-12 md:space-y-8">
           {/* Step 01 - Imersão */}
           <motion.div
             className="w-full md:w-4/5 md:ml-0 md:mr-auto"
@@ -204,7 +204,7 @@ export default function TorieSection() {
 
           {/* Step 04 - Evolução */}
           <motion.div
-            className="w-full md:w-4/5 md:ml-auto md:mr-0 mb-32"
+            className="w-full md:w-4/5 md:ml-auto md:mr-0 mb-16 md:mb-32"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.6 }}
@@ -226,7 +226,7 @@ export default function TorieSection() {
 
       {/* CTA Section */}
       <motion.div
-        className="relative min-h-[50vh] flex items-center justify-center mt-64"
+        className="relative min-h-[50vh] flex items-center justify-center mt-16 md:mt-32"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={isInView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 1 }}
