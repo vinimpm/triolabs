@@ -109,8 +109,8 @@ export default function TorieSection() {
             transition={{ duration: 1 }}
           >
             <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:p-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-12 md:left-16">01</span>
-              <div className="relative z-10 pt-12 md:pt-16">
+              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-12 left-12 md:top-16 md:left-16">01</span>
+              <div className="relative z-10 pt-12">
                 <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">IMERSÃO</h3>
                 <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">没入</p>
                 <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
@@ -129,8 +129,8 @@ export default function TorieSection() {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-8 right-12 md:top-12 md:right-16">02</span>
-              <div className="relative z-10 md:text-right pt-12 md:pt-16">
+              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-12 right-12 md:top-16 md:right-16">02</span>
+              <div className="relative z-10 md:text-right pt-12">
                 <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">DESCOBERTA</h3>
                 <p className="text-white text-xl md:text-2xl mb-6 font-semibold">発見</p>
                 <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
@@ -149,8 +149,8 @@ export default function TorieSection() {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:p-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-12 md:left-16">03</span>
-              <div className="relative z-10 pt-12 md:pt-16">
+              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-12 left-12 md:top-16 md:left-16">03</span>
+              <div className="relative z-10 pt-12">
                 <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">CRIAÇÃO</h3>
                 <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">創造</p>
                 <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
@@ -169,8 +169,8 @@ export default function TorieSection() {
             transition={{ duration: 1, delay: 0.6 }}
           >
             <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-8 right-12 md:top-12 md:right-16">04</span>
-              <div className="relative z-10 md:text-right pt-12 md:pt-16">
+              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-12 right-12 md:top-16 md:right-16">04</span>
+              <div className="relative z-10 md:text-right pt-12">
                 <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">EVOLUÇÃO</h3>
                 <p className="text-white text-xl md:text-2xl mb-6 font-semibold">進化</p>
                 <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
