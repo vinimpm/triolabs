@@ -35,7 +35,7 @@ export default function AboutSection() {
           className="overflow-hidden"
         >
           <h2 className="display-title text-white">
-            6 ANOS
+            7 ANOS
             <span className="text-outline block">DE OUSADIA</span>
           </h2>
         </motion.div>
