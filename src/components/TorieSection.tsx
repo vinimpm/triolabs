@@ -139,22 +139,21 @@ export default function TorieSection() {
         </div>
       </div>
 
-      {/* Process Steps - Documentary Style - Centered with Zigzag */}
+      {/* Process Steps - Grid Layout */}
       <div className="relative max-w-7xl mx-auto px-8">
-        <div className="space-y-12 md:space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 md:mb-32">
           {/* Step 01 - Imersão */}
           <motion.div
-            className="w-full md:w-4/5 md:ml-0 md:mr-auto"
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
           >
-            <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:py-24 md:pl-12 md:pr-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-16 md:left-12">01</span>
-              <div className="relative z-10 pt-12 md:pt-20">
-                <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">IMERSÃO</h3>
-                <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">没入</p>
-                <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
+            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden">
+              <span className="text-4xl text-white/10 font-bold absolute top-4 right-4">01</span>
+              <div className="relative z-10">
+                <h3 className="text-2xl text-white font-bold mb-2">IMERSÃO</h3>
+                <p className="text-trio-red text-lg mb-4 font-semibold">没入</p>
+                <p className="text-white/85 text-sm leading-relaxed">
                   Mergulhamos na essência da sua marca, entendendo profundamente
                   sua história, valores e aspirações.
                 </p>
@@ -164,17 +163,16 @@ export default function TorieSection() {
 
           {/* Step 02 - Descoberta */}
           <motion.div
-            className="w-full md:w-4/5 md:ml-auto md:mr-0"
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1, delay: 0.2 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-4 right-12 md:top-8 md:right-16">02</span>
-              <div className="relative z-10 md:text-right pt-12">
-                <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">DESCOBERTA</h3>
-                <p className="text-white text-xl md:text-2xl mb-6 font-semibold">発見</p>
-                <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
+            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden">
+              <span className="text-4xl text-trio-red/10 font-bold absolute top-4 right-4">02</span>
+              <div className="relative z-10">
+                <h3 className="text-2xl text-trio-red font-bold mb-2">DESCOBERTA</h3>
+                <p className="text-white text-lg mb-4 font-semibold">発見</p>
+                <p className="text-white/85 text-sm leading-relaxed">
                   Revelamos insights ocultos através de análise estratégica,
                   pesquisa de mercado e neuromarketing.
                 </p>
@@ -184,17 +182,16 @@ export default function TorieSection() {
 
           {/* Step 03 - Criação */}
           <motion.div
-            className="w-full md:w-4/5 md:ml-0 md:mr-auto"
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1, delay: 0.4 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:py-24 md:pl-12 md:pr-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-16 md:left-12">03</span>
-              <div className="relative z-10 pt-12 md:pt-20">
-                <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">CRIAÇÃO</h3>
-                <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">創造</p>
-                <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
+            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden">
+              <span className="text-4xl text-white/10 font-bold absolute top-4 right-4">03</span>
+              <div className="relative z-10">
+                <h3 className="text-2xl text-white font-bold mb-2">CRIAÇÃO</h3>
+                <p className="text-trio-red text-lg mb-4 font-semibold">創造</p>
+                <p className="text-white/85 text-sm leading-relaxed">
                   Transformamos estratégia em arte, desenvolvendo uma
                   identidade única e memorável.
                 </p>
@@ -204,17 +201,16 @@ export default function TorieSection() {
 
           {/* Step 04 - Evolução */}
           <motion.div
-            className="w-full md:w-4/5 md:ml-auto md:mr-0 mb-16 md:mb-32"
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1, delay: 0.6 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="relative md:clip-fragment bg-zinc-800/95 border-r-4 border-trio-red p-16 md:p-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-trio-red/20 font-bold absolute top-4 right-12 md:top-8 md:right-16">04</span>
-              <div className="relative z-10 md:text-right pt-12">
-                <h3 className="text-3xl md:text-5xl text-trio-red font-bold mb-3">EVOLUÇÃO</h3>
-                <p className="text-white text-xl md:text-2xl mb-6 font-semibold">進化</p>
-                <p className="text-white/85 text-base md:text-lg max-w-lg md:ml-auto leading-relaxed">
+            <div className="relative bg-zinc-800/95 border-t-4 border-trio-red p-8 h-full overflow-hidden">
+              <span className="text-4xl text-trio-red/10 font-bold absolute top-4 right-4">04</span>
+              <div className="relative z-10">
+                <h3 className="text-2xl text-trio-red font-bold mb-2">EVOLUÇÃO</h3>
+                <p className="text-white text-lg mb-4 font-semibold">進化</p>
+                <p className="text-white/85 text-sm leading-relaxed">
                   Acompanhamos e otimizamos continuamente, garantindo
                   crescimento sustentável e relevância.
                 </p>
