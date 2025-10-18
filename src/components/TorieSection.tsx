@@ -39,62 +39,90 @@ export default function TorieSection() {
           <h2 className="section-title text-white">
             TORIÊ
           </h2>
-          <p className="text-trio-red text-5xl mt-6 font-bold">鳥居</p>
         </motion.div>
       </div>
 
-      {/* Philosophy Section - Clean Layout */}
-      <div className="relative py-24">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
-            {/* Left Philosophy - Zen */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1 }}
-              className="text-center"
-            >
-              <div className="relative inline-block">
-                <div className="text-8xl text-white/20 font-bold mb-4">禅</div>
-              </div>
-              <h3 className="text-3xl text-white font-bold mb-4">ZEN</h3>
-              <p className="text-white/75 text-lg leading-relaxed">
-                Equilíbrio e simplicidade em cada decisão estratégica
-              </p>
-            </motion.div>
+      {/* Manifesto Section */}
+      <div className="relative py-12 md:py-24">
+        <div className="max-w-4xl mx-auto px-8 md:px-16">
+          {/* Main Title */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1 }}
+            className="text-center mb-12 md:mb-16"
+          >
+            <h3 className="text-3xl md:text-5xl text-white font-bold mb-8">
+              O Método Toriê — a ruptura necessária
+            </h3>
+            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
+              Não é sobre aprender mais.<br/>
+              É sobre lembrar o que a sua marca é antes de ter sido moldada.
+            </p>
+          </motion.div>
 
-            {/* Center Philosophy - Torii */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, delay: 0.2 }}
-              className="text-center"
-            >
-              <div className="relative inline-block bg-trio-red p-6 mb-4">
-                <div className="text-7xl text-white font-bold">鳥居</div>
-              </div>
-              <h3 className="text-3xl text-trio-red font-bold mb-4">TORII</h3>
-              <p className="text-white/75 text-lg leading-relaxed">
-                Portal de transformação entre o comum e o extraordinário
-              </p>
-            </motion.div>
+          {/* First Paragraph */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="mb-10 md:mb-12"
+          >
+            <p className="text-base md:text-lg text-white/85 leading-relaxed mb-6">
+              O Método Toriê nasce da inquietude — da recusa em aceitar padrões, fórmulas prontas e discursos que esvaziam significado.
+              Ele é uma experiência viva, um mergulho profundo naquilo que é autêntico, potente e verdadeiro em cada marca — pessoal ou corporativa.
+            </p>
+            <p className="text-base md:text-lg text-white/85 leading-relaxed">
+              Aqui, não buscamos aperfeiçoar o que o mercado espera de você.<br/>
+              Buscamos reacender o que o mundo tentou apagar.
+            </p>
+          </motion.div>
 
-            {/* Right Philosophy - Wabi-Sabi */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, delay: 0.4 }}
-              className="text-center"
-            >
-              <div className="relative inline-block">
-                <div className="text-8xl text-white/20 font-bold mb-4">侘寂</div>
-              </div>
-              <h3 className="text-3xl text-white font-bold mb-4">WABI-SABI</h3>
-              <p className="text-white/75 text-lg leading-relaxed">
-                A beleza da imperfeição autêntica em cada marca
-              </p>
-            </motion.div>
-          </div>
+          {/* Impact Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="bg-trio-red p-8 md:p-12 my-12 md:my-16"
+          >
+            <div className="text-white text-lg md:text-2xl font-bold text-center space-y-2">
+              <p>A Trio não ensina.</p>
+              <p>Provoca.</p>
+              <p>Desconstrói.</p>
+              <p>Reconstrói.</p>
+            </div>
+          </motion.div>
+
+          {/* Second Paragraph */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="mb-10 md:mb-12"
+          >
+            <p className="text-base md:text-lg text-white/85 leading-relaxed mb-6">
+              O Método Toriê é a fagulha que transforma estratégia em identidade —<br/>
+              da imagem à essência, da comunicação ao posicionamento,<br/>
+              da presença ao propósito.
+            </p>
+            <p className="text-base md:text-lg text-white/85 leading-relaxed mb-6">
+              É um convite à coragem de ser inteiro.<br/>
+              De sustentar uma marca viva, coerente e inegociável.<br/>
+              Sem verniz. Sem roteiro. Sem medo.
+            </p>
+          </motion.div>
+
+          {/* Closing Statement */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="text-center"
+          >
+            <p className="text-xl md:text-3xl text-trio-red font-bold">
+              O Método Toriê: onde marcas se encontram pela primeira vez.
+            </p>
+          </motion.div>
         </div>
       </div>
 
