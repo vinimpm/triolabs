@@ -109,8 +109,8 @@ export default function TorieSection() {
             transition={{ duration: 1 }}
           >
             <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:py-24 md:pl-12 md:pr-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-12 left-8 md:top-16 md:left-12">01</span>
-              <div className="relative z-10 pt-16 md:pt-20 pl-4 md:pl-0">
+              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-16 md:left-12">01</span>
+              <div className="relative z-10 pt-12 md:pt-20">
                 <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">IMERSÃO</h3>
                 <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">没入</p>
                 <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
@@ -149,8 +149,8 @@ export default function TorieSection() {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <div className="relative md:clip-angular bg-zinc-800/95 border-l-4 border-trio-red p-16 md:py-24 md:pl-12 md:pr-24 overflow-hidden">
-              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-12 left-8 md:top-16 md:left-12">03</span>
-              <div className="relative z-10 pt-16 md:pt-20 pl-4 md:pl-0">
+              <span className="text-6xl md:text-8xl text-white/20 font-bold absolute top-8 left-12 md:top-16 md:left-12">03</span>
+              <div className="relative z-10 pt-12 md:pt-20">
                 <h3 className="text-3xl md:text-5xl text-white font-bold mb-3">CRIAÇÃO</h3>
                 <p className="text-trio-red text-xl md:text-2xl mb-6 font-semibold">創造</p>
                 <p className="text-white/85 text-base md:text-lg max-w-lg leading-relaxed">
