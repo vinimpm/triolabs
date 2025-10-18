@@ -34,7 +34,7 @@ export default function AboutSection() {
           transition={{ duration: 1 }}
           className="overflow-hidden"
         >
-          <h2 className="display-title text-white">
+          <h2 className="display-title text-white text-center md:text-left">
             7 ANOS
             <span className="text-outline block">DE OUSADIA</span>
           </h2>
