@@ -106,7 +106,7 @@ export default function ServicesSection() {
                   transition={{ duration: 0.3 }}
                   className={`${
                     isEven ? 'md:clip-angular' : 'md:clip-fragment'
-                  } bg-zinc-800/95 backdrop-blur-sm p-10 md:p-16 border border-white/20`}
+                  } bg-zinc-800/95 backdrop-blur-sm p-12 md:p-20 border border-white/20`}
                 >
                   <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
@@ -114,19 +114,20 @@ export default function ServicesSection() {
                   <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mt-3 mb-2 md:mt-4 md:mb-3`}>
                     {service.title}
                   </h3>
-                  <p className="text-lg md:text-2xl text-white/90 mb-4 md:mb-6">
-                    {service.subtitle}
+                  <p className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+                    <span className="text-outline-filled">{service.subtitle.split(' ')[0]}</span>
+                    <span className="text-white"> {service.subtitle.split(' ').slice(1).join(' ')}</span>
                   </p>
-                  <p className="text-sm md:text-lg text-white/80 max-w-md mb-6 md:mb-8 leading-relaxed">
+                  <p className="text-sm md:text-lg text-white/85 max-w-md mb-8 md:mb-10 leading-relaxed">
                     {service.description}
                   </p>
 
                   {/* Service Details */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 mt-6 md:mt-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mt-6 md:mt-8 mb-4">
                     {service.details.map((detail, idx) => (
-                      <div key={idx} className="flex items-center space-x-2 md:space-x-3">
-                        <div className="w-1.5 h-1.5 bg-trio-red rounded-full flex-shrink-0" />
-                        <span className="text-sm md:text-base text-white/70 font-medium">{detail}</span>
+                      <div key={idx} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
+                        <span className="text-base md:text-lg text-white/90 font-medium">{detail}</span>
                       </div>
                     ))}
                   </div>
