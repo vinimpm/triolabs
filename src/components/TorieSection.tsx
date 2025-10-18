@@ -43,7 +43,7 @@ export default function TorieSection() {
       </div>
 
       {/* Manifesto Section - Asymmetric Layout */}
-      <div className="relative py-12 md:py-24">
+      <div className="relative pt-12 md:pt-24">
         <div className="asymmetric-grid max-w-7xl mx-auto px-8 md:px-16">
           {/* Main Title - Full Width */}
           <motion.div
