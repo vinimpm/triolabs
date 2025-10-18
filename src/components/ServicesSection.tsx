@@ -118,7 +118,7 @@ export default function ServicesSection() {
                       <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mb-2 md:mb-3`}>
                         {service.title}
                       </h3>
-                      <p className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 tracking-wider">
+                      <p className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 tracking-wider whitespace-nowrap">
                         <span className="text-white" style={{
                           WebkitTextStroke: service.color === 'text-white' ? '2px #FF0000' : '2px #FFFFFF',
                           WebkitTextFillColor: 'transparent',
@@ -134,8 +134,8 @@ export default function ServicesSection() {
                     </div>
 
                     {/* Right Column - Service Details */}
-                    <div className="md:border-l md:border-white/20 md:pl-16">
-                      <div className="flex flex-col gap-4 md:gap-5 md:pt-2">
+                    <div className="md:border-l md:border-white/20 md:pl-16 flex items-center">
+                      <div className="flex flex-col gap-4 md:gap-5 w-full">
                         {service.details.map((detail, idx) => (
                           <div key={idx} className="flex items-center space-x-3">
                             <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
