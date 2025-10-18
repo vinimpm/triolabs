@@ -68,9 +68,9 @@ export default function TorieSection() {
             </div>
           </motion.div>
 
-          {/* Left - First Text Block in Card */}
+          {/* Left - First Text Block */}
           <motion.div
-            className="col-span-12 md:col-span-7"
+            className="col-span-12 md:col-span-8 md:col-start-1"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
@@ -87,15 +87,15 @@ export default function TorieSection() {
             </div>
           </motion.div>
 
-          {/* Right - Impact Card */}
+          {/* Right - Impact Card (Zigzag) */}
           <motion.div
-            className="col-span-12 md:col-span-5 md:col-start-8 mt-8 md:mt-0"
+            className="col-span-12 md:col-span-6 md:col-start-7 mt-12 md:mt-16"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <div className="md:clip-fragment bg-trio-red p-8 md:p-12 flex items-center min-h-full">
-              <div className="text-white text-lg md:text-2xl font-bold uppercase space-y-3">
+            <div className="md:clip-fragment bg-trio-red p-10 md:p-16">
+              <div className="text-white text-xl md:text-3xl font-bold uppercase space-y-4">
                 <p>A Trio não ensina.</p>
                 <p>Provoca.</p>
                 <p>Desconstrói.</p>
@@ -104,10 +104,10 @@ export default function TorieSection() {
             </div>
           </motion.div>
 
-          {/* Right Aligned - Second Text Block */}
+          {/* Left - Second Text Block (Zigzag) */}
           <motion.div
-            className="col-span-12 md:col-span-8 md:col-start-5 mt-12 md:mt-16"
-            initial={{ opacity: 0, x: 50 }}
+            className="col-span-12 md:col-span-9 md:col-start-1 mt-12 md:mt-16"
+            initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.6 }}
           >
