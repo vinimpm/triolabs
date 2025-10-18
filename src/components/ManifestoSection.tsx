@@ -49,8 +49,8 @@ export default function ManifestoSection() {
 
         {/* Floating Text Block - Right */}
         <motion.div
-          className="col-span-7 col-start-6 md:col-span-5 md:col-start-7 pt-64 md:pt-24 px-4 md:px-0 relative z-10"
-          style={{ y: 0 }}
+          className="col-span-7 col-start-6 md:col-span-5 md:col-start-7 pt-32 md:pt-24 px-4 md:px-0 relative z-10"
+          style={{ y: y2 }}
         >
           <div className="md:clip-fragment bg-trio-red p-10 md:py-14 md:px-20 flex items-center">
             <div className="text-white text-xs md:text-2xl font-bold uppercase leading-relaxed space-y-1 md:space-y-3 w-full">
