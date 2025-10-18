@@ -29,7 +29,7 @@ export default function ManifestoSection() {
       <div className="relative asymmetric-grid">
         {/* Large Statement 1 - Top Left */}
         <motion.div
-          className="col-span-8 col-start-1 pt-32"
+          className="col-span-8 col-start-1 pt-32 relative z-20"
           style={{ y: y1 }}
         >
           <motion.div
@@ -49,7 +49,7 @@ export default function ManifestoSection() {
 
         {/* Floating Text Block - Right */}
         <motion.div
-          className="col-span-7 col-start-6 md:col-span-5 md:col-start-7 pt-20 md:pt-24 px-4 md:px-0 relative z-0"
+          className="col-span-7 col-start-6 md:col-span-5 md:col-start-7 pt-20 md:pt-24 px-4 md:px-0 relative z-10"
           style={{ y: y2 }}
         >
           <div className="md:clip-fragment bg-trio-red p-10 md:py-14 md:px-20 flex items-center">
