@@ -111,31 +111,31 @@ export default function ServicesSection() {
                   <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
                   </span>
-                  <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mt-3 mb-2 md:mt-4 md:mb-3`}>
-                    {service.title}
-                  </h3>
-                  <p className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 tracking-wider">
-                    <span className="text-white" style={{
-                      WebkitTextStroke: service.color === 'text-white' ? '2px #FF0000' : '2px #FFFFFF',
-                      WebkitTextFillColor: 'transparent',
-                      textShadow: service.color === 'text-white'
-                        ? '2px 2px 0px rgba(255, 0, 0, 0.3)'
-                        : '2px 2px 0px rgba(255, 255, 255, 0.3)',
-                      letterSpacing: '0.05em'
-                    }}>{service.subtitle}</span>
-                  </p>
 
-                  <div className="grid md:grid-cols-2 gap-8 md:gap-16">
-                    {/* Description */}
+                  <div className="grid md:grid-cols-2 gap-8 md:gap-16 mt-3 md:mt-4">
+                    {/* Left Column - Title, Subtitle & Description */}
                     <div>
+                      <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mb-2 md:mb-3`}>
+                        {service.title}
+                      </h3>
+                      <p className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 tracking-wider">
+                        <span className="text-white" style={{
+                          WebkitTextStroke: service.color === 'text-white' ? '2px #FF0000' : '2px #FFFFFF',
+                          WebkitTextFillColor: 'transparent',
+                          textShadow: service.color === 'text-white'
+                            ? '2px 2px 0px rgba(255, 0, 0, 0.3)'
+                            : '2px 2px 0px rgba(255, 255, 255, 0.3)',
+                          letterSpacing: '0.05em'
+                        }}>{service.subtitle}</span>
+                      </p>
                       <p className="text-sm md:text-lg text-white/85 leading-relaxed">
                         {service.description}
                       </p>
                     </div>
 
-                    {/* Service Details - Vertical */}
-                    <div>
-                      <div className="flex flex-col gap-4 md:gap-5">
+                    {/* Right Column - Service Details */}
+                    <div className="md:border-l md:border-white/20 md:pl-16">
+                      <div className="flex flex-col gap-4 md:gap-5 md:pt-2">
                         {service.details.map((detail, idx) => (
                           <div key={idx} className="flex items-center space-x-3">
                             <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
