@@ -138,29 +138,42 @@ export default function ManifestoSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <div className="max-w-4xl mx-auto bg-black/60 backdrop-blur-sm p-10 md:p-16 border-l-4 border-trio-red">
-            <h3 className="text-4xl md:text-5xl text-white font-bold mb-8 md:mb-10 leading-tight" style={{
-              textShadow: '2px 2px 8px rgba(255, 0, 0, 0.3)'
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-black/80 via-zinc-900/60 to-black/80 backdrop-blur-md p-8 md:p-12 border border-trio-red/30 shadow-2xl shadow-trio-red/10">
+            <h3 className="text-3xl md:text-4xl text-white font-bold mb-6 uppercase tracking-wide" style={{
+              textShadow: '3px 3px 12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.2)'
             }}>
               A Triô é pra quem tem coragem
             </h3>
-            <div className="space-y-5 md:space-y-6">
-              <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-                Pra quem quer <span className="text-trio-red font-bold" style={{
-                  textShadow: '0 0 20px rgba(255, 0, 0, 0.4)'
+            <div className="space-y-4 text-lg">
+              <p className="text-white/90" style={{
+                textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)'
+              }}>
+                Pra quem quer <span className="text-trio-red font-semibold tracking-wide" style={{
+                  textShadow: '0 0 25px rgba(255, 0, 0, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8)'
                 }}>virar o jogo da própria marca</span>.
               </p>
-              <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-                Pra quem quer <span className="text-white font-bold">parar de parecer e começar a ser</span>.
+              <p className="text-white/90" style={{
+                textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)'
+              }}>
+                Pra quem quer <span className="text-white font-semibold tracking-wide" style={{
+                  textShadow: '2px 2px 8px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8)'
+                }}>parar de parecer e começar a ser</span>.
               </p>
-              <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-                Pra quem prefere <span className="text-trio-red font-bold" style={{
-                  textShadow: '0 0 20px rgba(255, 0, 0, 0.4)'
+              <p className="text-white/90" style={{
+                textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)'
+              }}>
+                Pra quem prefere <span className="text-trio-red font-semibold tracking-wide" style={{
+                  textShadow: '0 0 25px rgba(255, 0, 0, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8)'
                 }}>ser lembrado a ser aceito</span>.
               </p>
-              <p className="text-base md:text-lg text-white/60 italic mt-8 pt-6 border-t border-white/10">
-                Posicionar é um ato de coragem — e também de prazer.
-              </p>
+              <div className="mt-6 pt-6 border-t border-trio-red/20">
+                <p className="text-white/70 text-base italic" style={{
+                  textShadow: '1px 1px 4px rgba(0, 0, 0, 0.8)',
+                  letterSpacing: '0.02em'
+                }}>
+                  Posicionar é um ato de coragem — e também de prazer.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
