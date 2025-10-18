@@ -52,7 +52,7 @@ export default function ManifestoSection() {
           className="col-span-7 col-start-6 md:col-span-5 md:col-start-7 pt-20 md:pt-24 px-4 md:px-0"
           style={{ y: y2 }}
         >
-          <div className="md:clip-fragment bg-trio-red p-8 md:py-12 md:px-16 flex items-center">
+          <div className="md:clip-fragment bg-trio-red p-10 md:py-14 md:px-20 flex items-center">
             <div className="text-white text-xs md:text-2xl font-bold uppercase leading-relaxed space-y-1 md:space-y-3 w-full">
               <p>Provocar suor.</p>
               <p>Pulsar desejo.</p>
