@@ -144,7 +144,7 @@ export default function TorieSection() {
       </div>
 
       {/* Process Steps - Grid Layout */}
-      <div className="relative max-w-7xl mx-auto px-8">
+      <div className="relative max-w-7xl mx-auto px-8 mt-16 md:mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 md:mb-32">
           {/* Step 01 - Imersão */}
           <motion.div
