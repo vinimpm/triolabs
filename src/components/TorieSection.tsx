@@ -70,7 +70,7 @@ export default function TorieSection() {
 
           {/* Left - First Text Block */}
           <motion.div
-            className="col-span-12 md:col-span-8 md:col-start-1"
+            className="col-span-12 md:col-span-8 md:col-start-1 order-1"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
@@ -89,7 +89,7 @@ export default function TorieSection() {
 
           {/* Right - Impact Card (Zigzag) */}
           <motion.div
-            className="col-span-12 md:col-span-6 md:col-start-7 mt-8 md:mt-12"
+            className="col-span-12 md:col-span-6 md:col-start-7 mt-8 md:mt-12 order-3 md:order-2"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.4 }}
@@ -106,7 +106,7 @@ export default function TorieSection() {
 
           {/* Left - Second Text Block (Zigzag) */}
           <motion.div
-            className="col-span-12 md:col-span-9 md:col-start-1 mt-8 md:mt-12"
+            className="col-span-12 md:col-span-9 md:col-start-1 mt-8 md:mt-12 order-2 md:order-3"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.6 }}
