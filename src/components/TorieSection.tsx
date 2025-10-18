@@ -140,7 +140,7 @@ export default function TorieSection() {
       </div>
 
       {/* Process Steps - Documentary Style - Centered with Zigzag */}
-      <div className="relative mt-32 max-w-7xl mx-auto px-8">
+      <div className="relative mt-12 md:mt-16 max-w-7xl mx-auto px-8">
         <div className="space-y-16 md:space-y-8">
           {/* Step 01 - Imersão */}
           <motion.div
