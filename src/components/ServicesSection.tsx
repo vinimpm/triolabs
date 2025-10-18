@@ -116,9 +116,11 @@ export default function ServicesSection() {
                   </h3>
                   <p className="text-xl md:text-2xl font-bold mb-6 md:mb-8">
                     <span className="text-white" style={{
-                      WebkitTextStroke: '2px #FF0000',
+                      WebkitTextStroke: service.color === 'text-white' ? '2px #FF0000' : '2px #FFFFFF',
                       WebkitTextFillColor: 'transparent',
-                      textShadow: '2px 2px 0px rgba(255, 0, 0, 0.3)'
+                      textShadow: service.color === 'text-white'
+                        ? '2px 2px 0px rgba(255, 0, 0, 0.3)'
+                        : '2px 2px 0px rgba(255, 255, 255, 0.3)'
                     }}>{service.subtitle}</span>
                   </p>
                   <p className="text-sm md:text-lg text-white/85 max-w-md mb-10 md:mb-12 leading-relaxed">
