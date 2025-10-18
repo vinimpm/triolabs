@@ -82,12 +82,12 @@ export default function ManifestoSection() {
                   <span className="text-outline-filled-black">TRÍADE</span><br/>
                   DA RUPTURA
                 </h3>
-                <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-black/60 text-sm md:text-lg px-4">
-                  <span>Neurobranding</span>
+                <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-lg px-4">
+                  <span className="bg-trio-red text-white px-3 py-1 font-semibold">Neurobranding</span>
                   <span className="text-trio-red">•</span>
-                  <span>Posicionamento</span>
+                  <span className="bg-trio-red text-white px-3 py-1 font-semibold">Posicionamento</span>
                   <span className="text-trio-red">•</span>
-                  <span>Presença</span>
+                  <span className="bg-trio-red text-white px-3 py-1 font-semibold">Presença</span>
                 </div>
               </motion.div>
             </div>
