@@ -19,10 +19,10 @@ export default function AboutSection() {
   const rotate = useTransform(scrollYProgress, [0, 1], [-5, 5])
 
   return (
-    <section ref={containerRef} id="sobre" className="relative min-h-[200vh] bg-black overflow-hidden">
+    <section ref={containerRef} id="sobre" className="relative min-h-[200vh] bg-white overflow-hidden">
       {/* Background Texture */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-trio-red/5 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-trio-red/5 to-white" />
         <div className="noise-overlay" />
       </div>
 
@@ -34,9 +34,9 @@ export default function AboutSection() {
           transition={{ duration: 1 }}
           className="overflow-hidden"
         >
-          <h2 className="display-title text-white text-center md:text-left">
+          <h2 className="display-title text-black text-center md:text-left">
             7 ANOS
-            <span className="text-outline block">DE OUSADIA</span>
+            <span className="text-outline-black block">DE OUSADIA</span>
           </h2>
         </motion.div>
       </div>
@@ -55,8 +55,8 @@ export default function AboutSection() {
               <span className="text-8xl md:text-9xl font-bold text-trio-red leading-none block">
                 100+
               </span>
-              <p className="text-white text-xl md:text-2xl mt-4 font-bold">MARCAS</p>
-              <p className="text-white/70 text-base uppercase tracking-wider mt-2">Transformadas</p>
+              <p className="text-black text-xl md:text-2xl mt-4 font-bold">MARCAS</p>
+              <p className="text-black/70 text-base uppercase tracking-wider mt-2">Transformadas</p>
             </motion.div>
 
             {/* Stat 2 */}
@@ -66,10 +66,10 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-center"
             >
-              <span className="text-8xl md:text-9xl font-bold text-white/30 leading-none block">
+              <span className="text-8xl md:text-9xl font-bold text-black/30 leading-none block">
                 1ª
               </span>
-              <p className="text-white text-xl md:text-2xl mt-4 font-bold">CASA</p>
+              <p className="text-black text-xl md:text-2xl mt-4 font-bold">CASA</p>
               <div className="inline-block bg-trio-red px-4 py-1 mt-2">
                 <p className="text-white text-base font-semibold uppercase tracking-wider">Com alma japonesa</p>
               </div>
@@ -85,8 +85,8 @@ export default function AboutSection() {
               <span className="text-8xl md:text-9xl font-bold text-trio-red/40 leading-none block">
                 ∞
               </span>
-              <p className="text-white text-xl md:text-2xl mt-4 font-bold">POSSIBILIDADES</p>
-              <p className="text-white/70 text-base uppercase tracking-wider mt-2">Infinitas</p>
+              <p className="text-black text-xl md:text-2xl mt-4 font-bold">POSSIBILIDADES</p>
+              <p className="text-black/70 text-base uppercase tracking-wider mt-2">Infinitas</p>
             </motion.div>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function AboutSection() {
             <div className="relative h-[50vh] md:h-[70vh] clip-angular bg-gradient-to-br from-trio-red/20 to-transparent">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center px-4">
-                  <div className="text-[8rem] md:text-[15rem] text-white/5 font-bold leading-none">
+                  <div className="text-[8rem] md:text-[15rem] text-black/5 font-bold leading-none">
                     LA
                   </div>
                   <p className="text-trio-red text-xl md:text-2xl font-light -mt-8 md:-mt-16">LUANA ANTTONI</p>
@@ -131,12 +131,12 @@ export default function AboutSection() {
               <span className="text-trio-red text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em]">
                 CEO & Fundadora
               </span>
-              <h3 className="text-4xl md:text-8xl font-bold text-white mt-4 mb-6 md:mb-8">
+              <h3 className="text-4xl md:text-8xl font-bold text-black mt-4 mb-6 md:mb-8">
                 LUANA<br/>
-                <span className="text-outline-filled">ANTTONI</span>
+                <span className="text-outline-filled-black">ANTTONI</span>
               </h3>
 
-              <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg">
+              <div className="space-y-4 md:space-y-6 text-black/70 text-base md:text-lg">
                 <p>
                   Estrategista apaixonada por negócios e comportamento humano.
                 </p>
@@ -144,7 +144,7 @@ export default function AboutSection() {
                   Com formações em Marketing, Psicologia do Consumo, Pricing Strategy,
                   Neuromarketing e Gestão de Projetos.
                 </p>
-                <p className="text-white">
+                <p className="text-black">
                   Criou a primeira Casa de Marcas e Marketing do Brasil a unir a
                   filosofia japonesa a um método autoral que transforma estratégia
                   em impacto real.
@@ -158,7 +158,7 @@ export default function AboutSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1, delay: 0.4 }}
               >
-                <p className="text-lg md:text-2xl text-white/80 italic">
+                <p className="text-lg md:text-2xl text-black/80 italic">
                   "Aqui, cada marca é tratada como uma obra em construção:
                   intencional, estratégica e memorável."
                 </p>
@@ -178,17 +178,17 @@ export default function AboutSection() {
       >
         <div className="text-center max-w-6xl mx-auto px-8">
           <motion.h3
-            className="section-title text-white leading-[0.85]"
+            className="section-title text-black leading-[0.85]"
             style={{ scale }}
           >
             SOMOS A CASA<br/>
             ONDE <span className="text-trio-red">DESIGN</span><br/>
             ENCONTRA<br/>
-            <span className="text-outline">ESTRATÉGIA</span>
+            <span className="text-outline-black">ESTRATÉGIA</span>
           </motion.h3>
 
           <motion.p
-            className="text-2xl text-white/60 mt-16"
+            className="text-2xl text-black/60 mt-16"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.3 }}
@@ -200,7 +200,7 @@ export default function AboutSection() {
 
         {/* Background Japanese Character */}
         <motion.div
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[40rem] text-white/5"
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[40rem] text-black/5"
           style={{ rotate: useTransform(scrollYProgress, [0, 1], [0, 30]) }}
         >
           創

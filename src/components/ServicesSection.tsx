@@ -10,7 +10,7 @@ const services = [
     subtitle: "& POSICIONAMENTO",
     description: "Construímos marcas com essência e estratégia para que elas nasçam fortes e cresçam com consistência.",
     details: ["Identidade Visual", "Naming", "Brand Guidelines", "Reposicionamento"],
-    color: "text-white"
+    color: "text-black"
   },
   {
     number: "02",
@@ -26,7 +26,7 @@ const services = [
     subtitle: "& COMUNICAÇÃO",
     description: "Histórias que conectam pessoas, dados que geram ação e conteúdo que transforma.",
     details: ["Content Strategy", "Copywriting", "Social Media", "Storytelling"],
-    color: "text-white"
+    color: "text-black"
   },
   {
     number: "04",
@@ -51,13 +51,13 @@ export default function ServicesSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0])
 
   return (
-    <section ref={containerRef} id="servicos" className="relative min-h-[200vh] bg-gradient-to-b from-black via-zinc-900 to-black overflow-hidden">
+    <section ref={containerRef} id="servicos" className="relative min-h-[200vh] bg-white overflow-hidden">
       {/* Background Image */}
       <motion.div
         className="absolute inset-0"
         style={{ y, opacity }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
         <div className="absolute inset-0 bg-[url('/brand/TRIO_LABS_HORIZONTAL_PRETO.png')] bg-center bg-no-repeat bg-cover opacity-5" />
       </motion.div>
 
@@ -68,9 +68,9 @@ export default function ServicesSection() {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1 }}
         >
-          <h2 className="display-title text-white px-8 md:px-16">
+          <h2 className="display-title text-black px-8 md:px-16">
             NOSSOS<br/>
-            <span className="text-outline">SERVIÇOS</span>
+            <span className="text-outline-black">SERVIÇOS</span>
           </h2>
         </motion.div>
       </div>
@@ -94,7 +94,7 @@ export default function ServicesSection() {
                 className={`hidden md:block absolute ${isEven ? 'left-0' : 'right-0'} top-1/2 transform -translate-y-1/2`}
                 style={{ y: useTransform(scrollYProgress, [0, 1], [index * 20, index * -20]) }}
               >
-                <span className="text-[20rem] font-bold text-white/5 leading-none">
+                <span className="text-[20rem] font-bold text-black/5 leading-none">
                   {service.number}
                 </span>
               </motion.div>
@@ -106,7 +106,7 @@ export default function ServicesSection() {
                   transition={{ duration: 0.3 }}
                   className={`${
                     isEven ? 'md:clip-angular' : 'md:clip-fragment'
-                  } bg-zinc-800/95 backdrop-blur-sm p-14 md:p-24 border border-white/20`}
+                  } bg-zinc-100 backdrop-blur-sm p-14 md:p-24 border border-black/20`}
                 >
                   <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
@@ -119,27 +119,27 @@ export default function ServicesSection() {
                         {service.title}
                       </h3>
                       <p className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 tracking-wider whitespace-nowrap">
-                        <span className="text-white" style={{
-                          WebkitTextStroke: service.color === 'text-white' ? '2px #FF0000' : '2px #FFFFFF',
+                        <span className="text-black" style={{
+                          WebkitTextStroke: service.color === 'text-black' ? '2px #FF0000' : '2px #000000',
                           WebkitTextFillColor: 'transparent',
-                          textShadow: service.color === 'text-white'
+                          textShadow: service.color === 'text-black'
                             ? '2px 2px 0px rgba(255, 0, 0, 0.3)'
-                            : '2px 2px 0px rgba(255, 255, 255, 0.3)',
+                            : '2px 2px 0px rgba(0, 0, 0, 0.3)',
                           letterSpacing: '0.05em'
                         }}>{service.subtitle}</span>
                       </p>
-                      <p className="text-sm md:text-lg text-white/85 leading-relaxed">
+                      <p className="text-sm md:text-lg text-black/85 leading-relaxed">
                         {service.description}
                       </p>
                     </div>
 
                     {/* Right Column - Service Details */}
-                    <div className="md:border-l md:border-white/20 md:pl-16 flex items-center">
+                    <div className="md:border-l md:border-black/20 md:pl-16 flex items-center">
                       <div className="flex flex-col gap-4 md:gap-5 w-full">
                         {service.details.map((detail, idx) => (
                           <div key={idx} className="flex items-center space-x-3">
                             <div className="w-2 h-2 bg-trio-red rounded-full flex-shrink-0" />
-                            <span className="text-base md:text-lg text-white/90 font-medium">{detail}</span>
+                            <span className="text-base md:text-lg text-black/90 font-medium">{detail}</span>
                           </div>
                         ))}
                       </div>
@@ -176,11 +176,11 @@ export default function ServicesSection() {
             <span className="text-trio-red text-sm uppercase tracking-[0.5em]">
               Exclusivo
             </span>
-            <h3 className="section-title text-white mt-4">
+            <h3 className="section-title text-black mt-4">
               CONSULTORIA<br/>
-              <span className="text-outline-filled">TORIÊ</span>
+              <span className="text-outline-filled-black">TORIÊ</span>
             </h3>
-            <p className="text-xl text-white/60 mt-8 max-w-2xl mx-auto">
+            <p className="text-xl text-black/60 mt-8 max-w-2xl mx-auto">
               Uma imersão completa no nosso método proprietário para
               transformar ou reposicionar marcas e negócios.
             </p>
@@ -188,7 +188,7 @@ export default function ServicesSection() {
 
           {/* Japanese Symbol */}
           <motion.div
-            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[30rem] text-white/5"
+            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[30rem] text-black/5"
             style={{ rotate: useTransform(scrollYProgress, [0, 1], [0, 45]) }}
           >
             道
