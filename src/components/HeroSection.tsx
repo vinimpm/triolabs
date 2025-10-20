@@ -28,10 +28,10 @@ export default function HeroSection() {
       <div className="noise-overlay" />
 
       {/* Asymmetric Grid Layout */}
-      <div className="relative h-screen flex flex-col justify-between py-8">
+      <div className="relative h-screen flex flex-col justify-between py-4 md:py-8">
         {/* Large Logo - Top Section */}
         <motion.div
-          className="pt-24 md:pt-32 px-8 md:px-16 z-10"
+          className="pt-12 md:pt-32 px-8 md:px-16 z-10"
           style={{ y: y1, opacity }}
         >
           <motion.div
@@ -53,7 +53,7 @@ export default function HeroSection() {
 
         {/* Central Statement - Middle Section */}
         <motion.div
-          className="px-8 z-20 my-8"
+          className="px-8 z-20 my-2 md:my-8"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.6 }}
@@ -64,12 +64,12 @@ export default function HeroSection() {
               com <span className="text-trio-red font-bold">alma </span>
               <span className="text-trio-red font-bold inline-flex flex-col">japonesa
                 <motion.div
-                  className="mt-1 ml-[0.8rem] md:ml-[1.5rem]"
+                  className="mt-1 ml-[0.4rem] md:ml-[2rem] w-[60px] md:w-[100px]"
                   initial={{ width: 0 }}
-                  animate={{ width: '100px' }}
+                  animate={{ width: '100%' }}
                   transition={{ duration: 1, delay: 1.5 }}
                 >
-                  <div className="h-[2px] bg-trio-red" />
+                  <div className="h-[2px] bg-trio-red w-full" />
                 </motion.div>
               </span>
             </h3>
@@ -78,7 +78,7 @@ export default function HeroSection() {
 
         {/* Diagonal Overlay Text - Bottom Section */}
         <motion.div
-          className="px-4 md:px-16 z-30 pb-8"
+          className="px-4 md:px-16 z-30 pb-4 md:pb-8"
           initial={{ y: 100 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
