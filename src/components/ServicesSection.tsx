@@ -112,7 +112,7 @@ export default function ServicesSection() {
                     {service.number}
                   </span>
 
-                  <div className="grid md:grid-cols-2 gap-8 md:gap-16 mt-3 md:mt-4">
+                  <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 mt-3 md:mt-4">
                     {/* Left Column - Title, Subtitle & Description */}
                     <div>
                       <h3 className={`text-3xl md:text-6xl font-bold ${service.color} mb-2 md:mb-3`}>
@@ -134,7 +134,7 @@ export default function ServicesSection() {
                     </div>
 
                     {/* Right Column - Service Details */}
-                    <div className={`md:border-l md:border-black/20 md:pl-16 ${index === 1 ? 'md:ml-10 lg:ml-0' : ''} ${index === 3 ? 'md:ml-10 lg:ml-6' : ''} flex items-center`}>
+                    <div className={`lg:border-l lg:border-black/20 lg:pl-16 flex items-center mt-6 lg:mt-0`}>
                       <div className="flex flex-col gap-4 md:gap-5 w-full">
                         {service.details.map((detail, idx) => (
                           <div key={idx} className="flex items-center space-x-3">
