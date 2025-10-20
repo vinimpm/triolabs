@@ -64,7 +64,7 @@ export default function HeroSection() {
               com <span className="text-trio-red font-bold">alma </span>
               <span className="text-trio-red font-bold inline-flex flex-col">japonesa
                 <motion.div
-                  className="mt-1 ml-[1.4rem] md:ml-[3.8rem] lg:ml-[4.2rem]"
+                  className="mt-1 ml-[1.7rem] md:ml-[3.8rem] lg:ml-[4.2rem]"
                   initial={{ width: 0 }}
                   animate={{ width: '100%' }}
                   transition={{ duration: 1, delay: 1.5 }}
