@@ -58,13 +58,13 @@ export default function HeroSection() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.6 }}
         >
-          <div className="relative bg-black/40 backdrop-blur-sm p-4 md:p-10 border border-white/10 w-fit mx-auto max-w-[90vw]">
-            <h3 className="text-2xl md:text-4xl lg:text-5xl leading-tight text-white">
-              <span className="whitespace-nowrap">A primeira casa de marcas e marketing</span><br/>
+          <div className="relative bg-black/40 backdrop-blur-sm p-4 md:p-10 border border-white/10 max-w-[95vw] md:w-fit mx-auto">
+            <h3 className="text-xl md:text-4xl lg:text-5xl leading-tight text-white">
+              <span className="md:whitespace-nowrap">A primeira casa de marcas e marketing</span><br/>
               com <span className="text-trio-red font-bold">alma </span>
               <span className="text-trio-red font-bold inline-flex flex-col">japonesa
                 <motion.div
-                  className="mt-1 ml-auto"
+                  className="mt-1 ml-[0.8rem] md:ml-[1.5rem]"
                   initial={{ width: 0 }}
                   animate={{ width: '100px' }}
                   transition={{ duration: 1, delay: 1.5 }}
