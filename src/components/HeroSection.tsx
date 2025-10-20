@@ -28,10 +28,10 @@ export default function HeroSection() {
       <div className="noise-overlay" />
 
       {/* Asymmetric Grid Layout */}
-      <div className="relative h-screen flex flex-col justify-evenly md:justify-between py-2 md:py-8">
+      <div className="relative h-screen flex flex-col justify-evenly lg:justify-between py-2 md:py-8">
         {/* Large Logo - Top Section */}
         <motion.div
-          className="pt-2 md:pt-32 px-8 md:px-16 z-10"
+          className="pt-2 md:pt-8 lg:pt-32 px-8 md:px-16 z-10"
           style={{ y: y1, opacity }}
         >
           <motion.div
