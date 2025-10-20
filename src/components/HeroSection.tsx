@@ -60,7 +60,7 @@ export default function HeroSection() {
         >
           <div className="relative bg-black/40 backdrop-blur-sm p-6 md:p-10 border border-white/10 max-w-4xl mx-auto">
             <h3 className="text-3xl md:text-5xl lg:text-6xl leading-tight text-white">
-              A primeira casa de marcas e marketing<br/>
+              <span className="whitespace-nowrap">A primeira casa de marcas e marketing</span><br/>
               com<span className="text-trio-red font-bold"> alma japonesa</span>
             </h3>
             <motion.div
