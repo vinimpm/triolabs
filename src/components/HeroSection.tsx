@@ -95,7 +95,7 @@ export default function HeroSection() {
 
         {/* Floating Elements - Right Side */}
         <motion.div
-          className="hidden md:block absolute top-1/4 right-8 md:right-16 z-10"
+          className="hidden lg:block absolute top-1/4 right-8 md:right-16 z-10"
           style={{ y: y2 }}
         >
           <motion.div
