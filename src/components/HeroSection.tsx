@@ -64,12 +64,12 @@ export default function HeroSection() {
               com <span className="text-trio-red font-bold">alma </span>
               <span className="text-trio-red font-bold inline-flex flex-col">japonesa
                 <motion.div
-                  className="mt-1 ml-[0.75rem] md:ml-[3rem]"
+                  className="mt-1 ml-[0.75rem] md:ml-[1.8rem] lg:ml-[3rem]"
                   initial={{ width: 0 }}
                   animate={{ width: '100%' }}
                   transition={{ duration: 1, delay: 1.5 }}
                 >
-                  <div className="h-[2px] bg-trio-red w-[40px] md:w-[100px]" />
+                  <div className="h-[2px] bg-trio-red w-[40px] md:w-[70px] lg:w-[100px]" />
                 </motion.div>
               </span>
             </h3>
