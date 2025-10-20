@@ -134,7 +134,7 @@ export default function ServicesSection() {
                     </div>
 
                     {/* Right Column - Service Details */}
-                    <div className={`md:border-l md:border-black/20 md:pl-16 ${index === 3 ? 'md:ml-16' : ''} flex items-center`}>
+                    <div className={`md:border-l md:border-black/20 md:pl-16 ${index === 3 ? 'md:ml-6' : ''} flex items-center`}>
                       <div className="flex flex-col gap-4 md:gap-5 w-full">
                         {service.details.map((detail, idx) => (
                           <div key={idx} className="flex items-center space-x-3">
