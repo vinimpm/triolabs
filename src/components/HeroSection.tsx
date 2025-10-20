@@ -58,8 +58,8 @@ export default function HeroSection() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.6 }}
         >
-          <div className="relative bg-black/40 backdrop-blur-sm p-6 md:p-10 border border-white/10 max-w-4xl mx-auto">
-            <h3 className="text-3xl md:text-5xl lg:text-6xl leading-tight text-white">
+          <div className="relative bg-black/40 backdrop-blur-sm p-6 md:p-10 border border-white/10 max-w-5xl mx-auto">
+            <h3 className="text-2xl md:text-4xl lg:text-5xl leading-tight text-white">
               <span className="whitespace-nowrap">A primeira casa de marcas e marketing</span><br/>
               com<span className="text-trio-red font-bold"> alma japonesa</span>
             </h3>
