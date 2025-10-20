@@ -106,7 +106,7 @@ export default function ServicesSection() {
                   transition={{ duration: 0.3 }}
                   className={`${
                     isEven ? 'md:clip-angular' : 'md:clip-fragment'
-                  } bg-zinc-100 backdrop-blur-sm p-14 md:p-24 border border-black/20`}
+                  } bg-zinc-100 backdrop-blur-sm p-14 md:p-24 border-2 border-black/30`}
                 >
                   <span className={`text-xs md:text-base ${service.color} uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold`}>
                     {service.number}
