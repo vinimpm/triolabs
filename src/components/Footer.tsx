@@ -25,13 +25,13 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:asymmetric-grid gap-12 md:gap-0">
             {/* Brand Section - Large Typography */}
             <motion.div
-              className="md:col-span-6 md:col-start-1"
+              className="md:col-span-6 md:col-start-1 text-center md:text-left"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="mb-8">
+              <div className="mb-8 flex justify-center md:justify-start">
                 <Image
                   src="/brand/TRIO_LABS_HORIZONTAL_COM_SLOGAN_BRANCO.png"
                   alt="Trio Labs"
@@ -40,7 +40,7 @@ export default function Footer() {
                   className="w-full max-w-md h-auto"
                 />
               </div>
-              <p className="text-white/40 text-sm max-w-sm mb-8">
+              <p className="text-white/40 text-sm max-w-sm mx-auto md:mx-0 mb-8">
                 A primeira Casa de Marcas e Marketing com alma japonesa.
               </p>
               <p className="text-trio-red text-xl font-bold">
@@ -51,7 +51,7 @@ export default function Footer() {
 
             {/* Quick Links - Minimal Style */}
             <motion.div
-              className="md:col-span-3 md:col-start-8"
+              className="md:col-span-3 md:col-start-8 text-center md:text-left"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -89,7 +89,7 @@ export default function Footer() {
 
             {/* Contact Info */}
             <motion.div
-              className="md:col-span-3 md:col-start-11"
+              className="md:col-span-3 md:col-start-11 text-center md:text-left"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -104,7 +104,7 @@ export default function Footer() {
               </div>
 
               {/* Social Links */}
-              <div className="flex space-x-4 mt-8">
+              <div className="flex justify-center md:justify-start space-x-4 mt-8">
                 <motion.a
                   href="#"
                   className="w-10 h-10 border border-white/20 flex items-center justify-center text-white hover:bg-trio-red hover:border-trio-red transition-all"
@@ -137,7 +137,7 @@ export default function Footer() {
           <div className="mt-20">
             <div className="h-px bg-white/10 mb-8" />
 
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
               <motion.p
                 className="text-white/30 text-xs uppercase tracking-wider"
                 initial={{ opacity: 0 }}
@@ -148,7 +148,7 @@ export default function Footer() {
               </motion.p>
 
               <motion.div
-                className="flex items-center space-x-8 text-white/30 text-xs"
+                className="flex items-center justify-center md:justify-start space-x-8 text-white/30 text-xs"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
