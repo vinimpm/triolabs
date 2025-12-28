@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
-    remotePatterns: [],
+    unoptimized: true,
   },
   experimental: {
     optimizeCss: true,
   },
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

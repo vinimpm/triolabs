@@ -22,6 +22,8 @@ export default function ContactSection() {
     company: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -30,9 +32,29 @@ export default function ContactSection() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', company: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -145,23 +167,44 @@ export default function ContactSection() {
 
                 <motion.button
                   type="submit"
-                  className="relative group overflow-hidden"
+                  disabled={isSubmitting}
+                  className="relative group overflow-hidden disabled:opacity-50"
                   initial={{ y: 20, opacity: 0 }}
                   animate={isInView ? { y: 0, opacity: 1 } : {}}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: isSubmitting ? 1 : 1.05 }}
+                  whileTap={{ scale: isSubmitting ? 1 : 0.95 }}
                 >
                   <span className="relative z-10 text-white text-2xl font-bold uppercase tracking-wider">
-                    Enviar →
+                    {isSubmitting ? 'Enviando...' : submitStatus === 'success' ? 'Enviado!' : submitStatus === 'error' ? 'Erro - Tentar novamente' : 'Enviar →'}
                   </span>
                   <motion.div
-                    className="absolute bottom-0 left-0 h-1 bg-trio-red"
-                    initial={{ width: 0 }}
+                    className={`absolute bottom-0 left-0 h-1 ${submitStatus === 'success' ? 'bg-green-500' : submitStatus === 'error' ? 'bg-red-500' : 'bg-trio-red'}`}
+                    initial={{ width: submitStatus === 'success' || submitStatus === 'error' ? '100%' : 0 }}
                     whileHover={{ width: '100%' }}
                     transition={{ duration: 0.3 }}
                   />
                 </motion.button>
+
+                {submitStatus === 'success' && (
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-green-500 mt-4"
+                  >
+                    Mensagem enviada com sucesso! Entraremos em contato em breve.
+                  </motion.p>
+                )}
+
+                {submitStatus === 'error' && (
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-red-500 mt-4"
+                  >
+                    Erro ao enviar mensagem. Por favor, tente novamente.
+                  </motion.p>
+                )}
               </form>
             </div>
           </motion.div>
