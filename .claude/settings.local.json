@@ -10,7 +10,8 @@
       "Read(//c/Users/vinim/Downloads/**)",
       "Bash(cat:*)",
       "Bash(npm run build:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

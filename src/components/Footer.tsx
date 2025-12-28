@@ -144,7 +144,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
               >
-                © {currentYear} TRIÔ LABS — Todos os direitos reservados — v2.1
+                © {currentYear} TRIÔ LABS — Todos os direitos reservados
               </motion.p>
 
               <motion.div
