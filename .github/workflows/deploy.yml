@@ -12,20 +12,33 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify source files
+        run: |
+          echo "=== Checking Footer.tsx classes ==="
+          grep -o 'flex flex-col items-center' src/components/Footer.tsx || echo "Classes NOT found in source!"
+          echo "=== Last commit ==="
+          git log -1 --oneline
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Clean install dependencies
-        run: |
-          rm -rf node_modules
-          rm -rf .next
-          npm ci
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
+
+      - name: Verify build output
+        run: |
+          echo "=== Checking built HTML for classes ==="
+          grep -o 'flex flex-col items-center' out/index.html | head -3 || echo "Classes NOT found in build!"
+          echo "=== Files in out/ ==="
+          ls -la out/
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -36,3 +49,4 @@ jobs:
           local-dir: ./out/
           server-dir: /public_html/
           dangerous-clean-slate: true
+          log-level: verbose
