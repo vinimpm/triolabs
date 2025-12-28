@@ -22,22 +22,22 @@ export default function Footer() {
 
         {/* Main Content - Asymmetric Grid */}
         <div className="relative z-10 px-8 md:px-16 py-20">
-          <div className="grid grid-cols-1 md:asymmetric-grid gap-12 md:gap-0">
+          <div className="grid grid-cols-1 md:asymmetric-grid gap-12 md:gap-0 place-items-center md:place-items-start">
             {/* Brand Section - Large Typography */}
             <motion.div
-              className="md:col-span-6 md:col-start-1 text-center md:text-left"
+              className="w-full md:col-span-6 md:col-start-1 text-center md:text-left"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="mb-8 flex justify-center md:justify-start">
+              <div className="mb-8">
                 <Image
                   src="/brand/TRIO_LABS_HORIZONTAL_COM_SLOGAN_BRANCO.png"
                   alt="Trio Labs"
                   width={500}
                   height={200}
-                  className="w-full max-w-md h-auto"
+                  className="w-full max-w-md h-auto mx-auto md:mx-0"
                 />
               </div>
               <p className="text-white/40 text-sm max-w-sm mx-auto md:mx-0 mb-8">
@@ -51,7 +51,7 @@ export default function Footer() {
 
             {/* Quick Links - Minimal Style */}
             <motion.div
-              className="md:col-span-3 md:col-start-8 text-center md:text-left"
+              className="w-full md:col-span-3 md:col-start-8 text-center md:text-left"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -89,7 +89,7 @@ export default function Footer() {
 
             {/* Contact Info */}
             <motion.div
-              className="md:col-span-3 md:col-start-11 text-center md:text-left"
+              className="w-full md:col-span-3 md:col-start-11 text-center md:text-left"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
